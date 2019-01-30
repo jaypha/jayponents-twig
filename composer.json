@@ -1,0 +1,20 @@
+{
+  "name": "jaypha/jayponents-twig",
+  "description": "Twig adaptor for Jayponents",
+  "type": "library",
+  "license": "BSL-1.0",
+  "autoload" : {
+    "psr-4": { "Jaypha\\Jayponents\\Twig\\": "src/" }
+  },
+  "authors": [
+    { "name": "Jason den Dulk", "email": "jason@jaypha.com.au" }
+  ],
+  "require": {
+    "php": "^5.4 || ^7",
+    "jaypha/jayponents": "*",
+    "twig/twig": "^2.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6"
+  }
+}
