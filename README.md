@@ -23,6 +23,7 @@ template adaptor in Component.
 
 ### Examples
 
+```
 use Jaypha\Jayponents\Component;
 
 $loader = new Twig_Loader_Filesystem(__DIR__);
@@ -36,10 +37,23 @@ Component::setDefaultEngine($adaptor);
 // Can assign template adaptor to individual components.
 $component = new Component();
 $component->setEngine($adaptor);
+```
+
+## Caveat
+
+For a jayponent component to display properly, you need to turn autoescape off.
+
+### Example
+
+```
+{% autoescape false %}
+{{ content }}
+{% endautoescape %}
+```
 
 ## License
 
-Copyright (C) 2017-8 Jaypha.  
+Copyright (C) 2017-9 Jaypha.  
 Distributed under the Boost Software License, Version 1.0.  
 See http://www.boost.org/LICENSE_1_0.txt
 
